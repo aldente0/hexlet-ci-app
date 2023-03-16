@@ -1,0 +1,22 @@
+name: setup-lint-test
+# действие на которое запускается workflow
+on: push
+
+jobs:
+  # имя задания
+  say-hello:
+    # OC для запуска
+    runs-on: ubuntu-latest
+    # шаги, которые надо выполнить
+    steps:
+      # экшен, выполняет какую-то задачу
+      # checkout – клонирует репозиторий
+      - uses: actions/checkout@v3
+      # установка node.js
+      - uses: actions/setup-node@v3
+      # install npm and build project
+      - run: make setup
+      # run linter
+      - run: make lint
+      # run tests
+      - run: make test

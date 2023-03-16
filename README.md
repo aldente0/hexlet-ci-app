@@ -1,3 +1,4 @@
+![Github Actions](https://github.com//aldente0/hexlet-ci-app/actions/workflows/setup-lint-test.yml/badge.svg)
 # Example app for CI Hexlet course
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
