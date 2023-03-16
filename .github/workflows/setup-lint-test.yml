@@ -22,8 +22,7 @@ jobs:
       - run: make lint
       # run tests
       - run: make test
-      # run sync check
-      - uses: actions/checkout@master
+      # run synk check
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         env:
