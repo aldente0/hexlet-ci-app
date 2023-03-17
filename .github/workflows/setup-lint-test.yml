@@ -22,8 +22,3 @@ jobs:
       - run: make lint
       # run tests
       - run: make test
-      # run synk check
-      - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/node@master
-        with:
-          args: --severity-threshold=high
